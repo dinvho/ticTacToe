@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../dailyCodingChallenges/codingChallenges"
+		},
+		{
+			"path": "../Class materials"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ticTacToe"
+	}
+}
