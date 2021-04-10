@@ -59,7 +59,7 @@ body {
 }
 
 .cell.x::before, .cell.x::after{
-    background-color: black;
+    background-color: rgb(233, 113, 0);
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before, 
