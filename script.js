@@ -15,17 +15,20 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
 const winningMessageElement = document.getElementById('winning-message')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text')
-const restartGame = document.querySelector('button').addEventListener('click', gameRestard)
+const restartGame = document.querySelector('button').addEventListener('click', startGame)
 let circleTurn
 
 startGame()
 
-function startGame (){
+function startGame(){
     circleTurn = false 
     cellElements.forEach(cell => {
+        cell.classList.remove(X_CLASS)
+        cell.classList.remove(CIRCLE_CLASS)
         cell.addEventListener('click', handleClick, {once: true})
     })
     setBoardHoverClass()
+    winningMessageElement.classList.remove('show')
 }
 
 function handleClick(e){
@@ -88,13 +91,3 @@ function checkWin(currentClass){
     })
 }
 
-function gameRestard(){
-    circleTurn = false 
-    cellElements.forEach(cell => {
-        cell.classList.remove(X_CLASS)
-        cell.classList.remove(CIRCLE_CLASS)
-        cell.addEventListener('click', handleClick, {once: true})
-    })
-    setBoardHoverClass()
-    winningMessageElement.classList.remove('show')
-}
