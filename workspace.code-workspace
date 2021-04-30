@@ -8,9 +8,24 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../storybooks"
+		},
+		{
+			"path": "../todolist-review-app"
+		},
+		{
+			"path": "../clientProjects"
+		},
+		{
+			"path": "../clientProjects/helpingInstitution"
+		},
+		{
+			"path": "../groupProjectLeonClone/binary-upload-boom"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "ticTacToe"
+		"liveServer.settings.multiRootWorkspaceName": "clientProjects"
 	}
 }
